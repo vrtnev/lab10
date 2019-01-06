@@ -1,0 +1,9 @@
+<div *ngFor="let user of users; let index = index">
+  <div class="col-4">{{user.name}}</div>
+  <div class="col-4">{{user.surname}}</div>
+  <div class="col-4">
+    <pre>{{user.emails.join('\n')}}</pre>
+  </div>
+  <button class="btn btn-primary" (click)="edit(index)">Редактировать</button>
+  <button class="btn btn-danger" (click)="delete(index)">Удалить</button>
+</div>
