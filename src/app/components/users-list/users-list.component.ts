@@ -10,6 +10,7 @@ import {UserService} from '../../services/user.service';
 export class UsersListComponent implements OnInit {
 
   users: User[] = [];
+  searchStr = '';
   constructor(private userService: UserService) { }
 
   ngOnInit() {
